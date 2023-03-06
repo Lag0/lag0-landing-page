@@ -53,15 +53,6 @@ body {
     grid-area: 1 / 2 / span 1 / span 1;
 }
 
-.bg-image {
-    max-width: 100%;
-    max-height: 85%;
-    justify-self: center;
-    object-fit: cover;
-    background-size: cover;
-    background-position: center;
-}
-
 .hero-content {
     border-radius: 25px;
     max-width: var(--container-width);
