@@ -117,7 +117,7 @@ body {
     margin-right: .8rem;
 }
 
-.btn:hover {
+.btn-primary:hover {
     background-color: #32A5FC;
     box-shadow: 0 .8rem rgba(0,0,0,.1);
 }
