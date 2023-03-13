@@ -149,10 +149,10 @@ body {
 
 @media screen and (max-width: 1280px) {
     #blob {
-        /*display: none;*/
+        display: none;
     }
     #blur {
-        /*display: none;*/
+        display: none;
     }
 }
 
