@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Fira Code';
-    src: url('../assets/fonts/FiraCode-Regular.woff') format('woff');
+    src: url('../fonts/FiraCode-Regular.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Fira Code SemiBold';
-    src: url('../assets/fonts/FiraCode-SemiBold.woff') format('woff');
+    src: url('../fonts/FiraCode-SemiBold.woff') format('woff');
 }
 
 * {
@@ -31,7 +31,7 @@
 
 body {
     background-color: var(--bg-color);
-    background-image: url("../assets/img/background-png-1920x1080.png");
+    background-image: url("../img/background-png-1920x1080.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -42,7 +42,7 @@ body {
 
 .container {
     width: 80vw;
-    height: 100vh;
+    height: 100dvh;
     margin: 0 auto;
     display: flex;
     justify-content: center;
