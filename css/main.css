@@ -41,10 +41,13 @@ body {
 }
 
 .container {
+    width: 80vw;
+    height: 100vh;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 7rem;
+    gap: 4rem;
 }
 
 .hero-content {
@@ -53,6 +56,7 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 1.5rem;
+    width: 100%;
     max-width: var(--container-width);
     max-height: var(--container-height);
     background-color: #23272A;
@@ -67,7 +71,7 @@ body {
     font-size: var(--primary-title-font-size);
     font-family: var(--main-font-family-semibold);
     line-height: 120%;
-    padding: 2.5rem 2.5rem 0 2.5rem;
+    padding: 2rem 2rem 0 2rem;
 }
 
 .hero-title strong {
@@ -122,48 +126,31 @@ body {
     box-shadow: 0 .8rem rgba(0,0,0,.1);
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 991px) {
     :root {
-        --primary-title-font-size: 2rem;
         --general-font-size: 1rem;
+        --primary-title-font-size: 2rem;
     }
-    .hero-title {
-        font-size: var(--primary-title-font-size);
-        padding: 1.2rem 1.2rem 0 1.2rem;
+}
+
+@media screen and (max-width: 767px) {
+    :root {
+        --general-font-size: 1.1rem;
+        --primary-title-font-size: 2.2rem;
     }
-    .hero-description{
-        font-size: var(--general-font-size);
-        line-height: 1.3em;
-        padding: 1.2rem 0;
-    }
-    .hero-links {
-        gap: 1.2rem;
-        padding: 1.2rem 0;
-    }
-    .hero-btn-wrap {
-        display: flex;
+
+    .container {
         flex-direction: column;
-        gap: 1rem;
-        margin-bottom: 1.2rem;
+        height: 100%;
+        margin: 1rem auto;
+        gap: 2rem;
     }
-    .hero-btn-wrap .btn-primary {
-        padding: .6rem 1.2rem;
-        border-radius: 1rem;
-        text-decoration: none;
-        font-family: var(--main-font-family-regular);
-        font-size: var(--general-font-size);
-        color: var(--dark-clr);
+
+    .hero-content {
+        height: 100vh;
     }
 }
 
-@media screen and (max-height: 770px) {
-    .container {
-        margin-top: 4rem;
-    }
-}
+@media screen and (max-width: 479px) {
 
-@media screen and (min-height: 1200px) and (max-height: 2000px) {
-    .container {
-        margin-top: 30rem;
-    }
 }
