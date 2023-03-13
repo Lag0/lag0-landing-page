@@ -143,6 +143,10 @@ body {
     color: var(--bg-clr);
 }
 
+.btn-primary:after {
+    transition: all 0.3s ease-in-out;
+}
+
 .is--disabled {
     display: none;
 }
