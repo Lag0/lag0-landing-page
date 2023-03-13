@@ -30,6 +30,7 @@ body {
     font-family: var(--index-main-font-family-regular);
     font-size: var(--index-font-size);
     color: var(--light-clr);
+    overflow: hidden;
 }
 
 /* START OF INDEX.HTML */
