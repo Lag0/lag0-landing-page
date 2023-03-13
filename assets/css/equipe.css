@@ -1,12 +1,4 @@
-@font-face {
-    font-family: 'Fira Code';
-    src: url('../fonts/FiraCode-Regular.woff') format('woff');
-}
 
-@font-face {
-    font-family: 'Fira Code SemiBold';
-    src: url('../fonts/FiraCode-SemiBold.woff') format('woff');
-}
 
 * {
     margin: 0;

@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;700&display=swap');
 
+@font-face {
+    font-family: 'Fira Code';
+    src: url('../fonts/FiraCode-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Fira Code SemiBold';
+    src: url('../fonts/FiraCode-SemiBold.woff') format('woff');
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -10,17 +20,19 @@
 :root {
     --light-clr: #FFF;
     --bg-clr: #1C1B1F;
-    --general-font-size: 1rem;
-    --primary-title-font-size: 3.5rem;
-    --main-font-family-regular: 'Epilogue', sans-serif;
+    --index-font-size: 1rem;
+    --index-primary-title-font-size: 3.5rem;
+    --index-main-font-family-regular: 'Epilogue', sans-serif;
 }
 
 body {
     background-color: var(--bg-clr);
-    font-family: var(--main-font-family-regular);
-    font-size: var(--general-font-size);
+    font-family: var(--index-main-font-family-regular);
+    font-size: var(--index-font-size);
     color: var(--light-clr);
 }
+
+/* START OF INDEX.HTML */
 
 #blob {
     height: 200px;
@@ -79,7 +91,9 @@ body {
 }
 
 .hero__header img {
+    align-self: center;
     width: 2rem;
+    height: 2rem;
 }
 
 .hero__header a {
@@ -97,8 +111,12 @@ body {
     margin: 0 auto;
 }
 
+.hero__logo img {
+    width: 100%
+}
+
 .hero__title h1 {
-    font-size: var(--primary-title-font-size);
+    font-size: var(--index-primary-title-font-size);
     font-weight: 400;
     line-height: 1.2;
 }
@@ -131,9 +149,27 @@ body {
 
 @media screen and (max-width: 1280px) {
     #blob {
-        display: none;
+        /*display: none;*/
     }
     #blur {
-        display: none;
+        /*display: none;*/
     }
 }
+
+@media screen and (max-width: 520px) {
+    .hero__content {
+        padding-top: 2rem;
+    }
+
+    .hero__title h1 {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .hero__title h1 {
+        font-size: 2rem;
+    }
+}
+
+/* END OF INDEX.HTML */
